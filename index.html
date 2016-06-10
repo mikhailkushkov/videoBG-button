@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF­-8">
+	<title>Project2</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+<div class="bg_holder">
+
+	<video autoplay loop="images/watereffec2t.mp4" id="bgvid">
+    	<source src="images/watereffec2t.mp4" type="video/webm">
+    	<source src="images/watereffec2t.mp4" type="video/mp4">
+	</video>
+
+	<div class="center">
+		<button id="button" onclick="randomColor()" class="button">Click me</button>
+	</div>
+
+</div>
+
+<script>
+
+	function randomColor() {
+  		var color = '#' + Math.random().toString(16).substr(2, 6);
+  		document.getElementById("button").style.backgroundColor = color;
+  		document.getElementById("button").innerHTML = color;
+		}
+
+</script>
+
+
+</body>
+</html>
